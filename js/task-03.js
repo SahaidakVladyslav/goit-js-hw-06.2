@@ -12,3 +12,8 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const listEl = document.querySelector("ul")
+
+const markup = images.map(item => `<li><img src="${item.url}" alt="${item.alt}"></li>`).join("")
+listEl.innerHTML = markup;
